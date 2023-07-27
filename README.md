@@ -4,8 +4,7 @@
 To develop a Django application to store and retrieve data from a database using Object Relational Mapping(ORM).
 
 ## Entity Relationship Diagram
-
-![erdiagram](erdiagram.png)
+![erdiagram](./erdiagram.png)
 
 ## DESIGN STEPS
 
@@ -20,9 +19,8 @@ push the code to github.
 
 
 ## PROGRAM
-
+```
 ### models.py
-```py
 from django.db import models
 from django.contrib import admin
 
@@ -35,10 +33,9 @@ class Student (models.Model):
     number=models.IntegerField()
 class StudentAdmin(admin.ModelAdmin):
     list_display=('referencenumber','name','age','email','number')
-    ```
 
 ### admin.py
-```py
+
 from django.contrib import admin
 from .models import Student,StudentAdmin
 
@@ -48,11 +45,11 @@ admin.site.register(Student,StudentAdmin)
 ## OUTPUT
 
 ### student error
-![studenterror](studenterror.png)
+![studenterror](./studenterror.png)
 ### student list
-![studentlist](studentlist.png)
+![studentlist](./studentlist.png)
 
 
 
 ## RESULT
-The Program is Excuted Successfully.
+The Program is Executed Successfully.
